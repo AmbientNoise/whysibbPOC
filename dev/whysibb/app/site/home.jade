@@ -1,0 +1,38 @@
+doctype html
+html
+	head
+		title='WhysiBB'
+		//load JQuery + Bootstrap + Whysibb
+		script(src='../js/jquery-2.1.0.min.js')
+		
+		script(src='../js/script_start.js')
+		script(src='../js/bbcode.js')
+		script(src='../js/jquery.wysibb.js')
+		script(src='../js/bootstrap.min.js')
+	
+			
+		//Load WhysiBB CSS theme, we can swap our own icons/logos/etc here.	
+		link(rel='stylesheet', href='../css/wbbtheme.css', type='text/css')
+		
+		//initialization of window javascript
+		script(src='../js/whysibb.windowinit.js')
+
+		//quick button preview. I kept this decoupled for modularization
+		script(src='../js/whysibb.buttonpreview.js')
+	body
+		div(class='container')
+			div(class='info-block')
+				div(class='row')
+					div(class='col-sm-12', style='min-height:800px;')
+						h1 Whysibb Demo
+						textarea(id='editor')
+						br
+						form
+							button(id='previewbutton', type='button') Preview
+						br
+						div(id='preview')
+						
+
+
+
+						
